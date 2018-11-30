@@ -11,3 +11,7 @@ $dark-grey:   #222;
 //fonts
 $defaultfont: 'Josefin Sans', ‘Trebuchet MS’, Helvetica, sans-serif; 
 $headingfont: Cardo, ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif; 
+//media queries
+$breakpoint-small: 'all and (min-width:701px) and (max-width:900px)';
+$breakpoint-medium: 'all and (min-width:901px) and (max-width: 1400px)';
+$breakpoint-large: 'all and (min-width:1401px)';

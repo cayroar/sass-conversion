@@ -1,0 +1,43 @@
+@import '_variables.scss';
+
+@mixin border-box{
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+@mixin font-size-weight($fam, $size, $weight) {
+    font: {
+        family: $fam;
+        size: $size;
+        weight: $weight; 
+    }
+}
+@mixin colors($bg-color, $color){
+    background-color: $bg-color;
+    color: $color;
+}
+@mixin font-pad($font,$pad){
+    font-size: $font;
+    padding: $pad
+}
+@mixin column($basis){
+    flex-basis: $basis;
+}
+@mixin breakpt-sm() {
+    @media #{$breakpoint-small} {
+        @content;
+    }
+}
+@mixin breakpt-med() {
+    @media #{$breakpoint-medium} {
+        @content;
+    }
+}
+@mixin breakpt-lg() {
+    @media #{$breakpoint-large} {
+        @content;
+    }
+}
+@mixin width-margin($width, $margin){
+    width: $width;
+    margin: $margin;
+}
